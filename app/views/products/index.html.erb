@@ -1,2 +1,16 @@
-<h1>Products#index</h1>
-<p>Find me in app/views/products/index.html.erb</p>
+<%= form_tag('/categories', remote: true, method: :get) do %>
+  <% @categories.each do |category| %>
+    <%= label_tag category.name %>
+    <%= check_box_tag "categories[]", id: "task-check"%>
+  <%end%>
+<%end%>
+<div class="row">
+
+    <% @products.each do |product| %>
+  <div class="col-md-4">
+      <%= image_tag product.pic_url, class: "img-responsive",  alt: "Responsive image" %>
+      <%= product.highlight %>
+  </div>
+
+<%end%>
+</div>

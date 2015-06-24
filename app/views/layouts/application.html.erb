@@ -2,37 +2,46 @@
 <html>
 <head>
   <title>Flonuts</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag "application" %>
+<%= stylesheet_link_tag    "application", :media => "all" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class="navbar navbar-default navbar-static-top">
-     <div class="container">
-       <div class="navbar-header">
-         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
-           <span class="sr-only">Toggle navigation</span>
-           <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-         </button>
-         <a class="navbar-brand" href="#"><span>Flonuts</span></a>
-       </div>
-       <div class="collapse navbar-collapse" id="navbar-ex-collapse">
-         <ul class="nav navbar-nav navbar-right">
-           <li class="active">
-             <a href="#">Producs</a>
-           </li>
-           <li>
-             <a href="#">New</a>
-           </li>
-         </ul>
+  <header>
+    <div class="navbar navbar-default navbar-static-top">
+       <div class="container">
+         <div class="navbar-header">
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+             <span class="sr-only">Toggle navigation</span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+           </button>
+           <img src="http://i.imgur.com/xL14760.png" class="img-responsive" alt="Responsive image">
+         </div>
+         <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+           <ul class="nav navbar-nav navbar-right">
+             <li class="active">
+               <a href="#">Producs</a>
+             </li>
+             <li>
+               <a href="#">New</a>
+             </li>
+           </ul>
+         </div>
        </div>
      </div>
-   </div>
-
-  <div class="container">
-    <%= yield %>
+  </header>
+  <div class="section">
+    <div class="container">
+      <%= yield %>
+    </div>
   </div>
+  <footer>
+    <img src="http://i.imgur.com/xL14760.png" class="img-responsive" alt="Responsive image">
+    <img src="http://i.imgur.com/rLsgIFf.png" class="img-responsive" alt="Responsive image">
+    <img src="http://i.imgur.com/rLsgIFf.png" class="img-responsive" alt="Responsive image">
+    <img src="http://i.imgur.com/rLsgIFf.png" class="img-responsive" alt="Responsive image">
+  </footer>
 </body>
 </html>

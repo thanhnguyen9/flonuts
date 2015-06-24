@@ -14,3 +14,9 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$( document ).ready(function() {
+  if($('#task-check').is(':checked'){
+    alert('hi');
+  })
+});

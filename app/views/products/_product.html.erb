@@ -1,6 +1,6 @@
 <% @products.each do |product| %>
   	<div class="col-md-4">
       	<%= image_tag product.pic_url, class: "img-responsive",  alt: "Responsive image" %>
-      	<p class="highlight-product"><%= product.highlight %></p>
+      	<p class="product-name"><%= product.name %></p>
   	</div>
 <%end%>

@@ -15,8 +15,8 @@
 //= require turbolinks
 //= require_tree .
 
-$( document ).ready(function() {
-  	$( "#product-form" ).change(function() {
-  	  	$('#product-form').submit();
-  	});
+$(document).on('page:load', function() {
+	$( "#product-form" ).change(function() {
+	  	$('#product-form').submit();
+	});
 });

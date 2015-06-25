@@ -1,5 +1,16 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "footer";
+
+.welcome {
+  background: url("http://i.imgur.com/pURAusX.jpg") no-repeat fixed;
+  height: 1300px;
+}
+
+.new-page{
+  background: url("http://i.imgur.com/hHmJ8V5.jpg") no-repeat fixed;
+  height: 200px;
+}
 
 .row {
 	padding-top: 3em;
@@ -16,7 +27,10 @@ display: inline;
 padding: 0 3em;
 }
 
-.navbar{margin-bottom: 0}
+.navbar{
+  margin-bottom: 0;
+  padding: 0 5em;
+}
 
 .highlight-product {
 	color: rgb(218, 90, 90);
@@ -32,4 +46,9 @@ padding: 0 3em;
 	color: #FFFFFF;
 	background-color: #F782B7;
 	border-color: #FFFFFF;
+}
+
+img.img-responsive.logo-image-top {
+  width: 50%;
+  margin: auto;
 }

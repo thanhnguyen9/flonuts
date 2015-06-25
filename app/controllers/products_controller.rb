@@ -4,9 +4,7 @@ class ProductsController < ApplicationController
     @categories = Category.all
     total = Product.all
     @products = []
-    total.map do |i|
-      @products << i if i.category.check_box == true
-    end
+    total.each {|i| @products << i if i.category.check_box}
   end
 
   def show

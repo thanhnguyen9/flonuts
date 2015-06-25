@@ -8,8 +8,8 @@
 			<div class="col-md-8">
 				<p><%= product.created_at.strftime('%b %d, %Y') %></p>
 				<p class='highlight-product'><%= product.highlight %><p>
-				<% if product.description.length > 10 %>
-				    <%= truncate(product.description, length: 10) %>
+				<% if product.description.length > 100 %>
+				    <%= truncate(product.description, length: 100) %>
 				    <%= link_to 'Read more', '', class: "read-more" %>
 				    <script>
 				      $('.read-more').on('click', function(e) {

@@ -1,6 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "footer";
+@import "header";
 
 .welcome {
   background: url("http://i.imgur.com/pURAusX.jpg") no-repeat fixed;
@@ -22,6 +23,9 @@
   font-size: 6em;
   margin-top: 0.5em;
 }
+
+.slogan.bites{padding-top: 0.15em}
+
 .new-page{
   background: url("http://i.imgur.com/hHmJ8V5.jpg") no-repeat fixed;
   height: 200px;
@@ -69,7 +73,6 @@ img.img-responsive.logo-image-top {
   margin: auto;
 }
 
-.slogan.bites{padding-top: 0.3em}
 p.product-name{text-align: center}
 
 a.btn.btn-primary.view-button {

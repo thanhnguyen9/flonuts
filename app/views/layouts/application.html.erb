@@ -8,33 +8,8 @@
   <link href='http://fonts.googleapis.com/css?family=Homemade+Apple' rel='stylesheet' type='text/css'></head>
 
 <body class="container-fluid">
-  <header>
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-static-top" role="navigation">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-                <%= link_to root_path do %>
-                  <img src="http://i.imgur.com/xL14760.png" class="img-responsive logo-image-top" alt="Responsive image">
-                <%end%>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><%= link_to "Products", products_path %></li>
-                    <li><%= link_to "News", product_path %></li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </nav>
-  </header>
-      <%= yield %>
+  
+    <%= yield %>
   <footer>
     <div class="social-footer">
       <img src="http://i.imgur.com/xL14760.png" class="img-responsive logo-image" alt="Responsive image">

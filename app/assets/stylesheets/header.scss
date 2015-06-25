@@ -1,0 +1,31 @@
+a.nav-menu {
+  margin-right: 7em;
+  color: white;
+  text-decoration: none;
+}
+
+.welcome {
+  background: url("http://i.imgur.com/pURAusX.jpg") no-repeat fixed;
+  height: 1300px;
+  padding: 3em;
+}
+.nav-logo {
+  max-width: 45%;
+  float: left;
+}
+
+.nav-button {
+  max-width: 45%;
+  float: right;
+  margin: 0em;
+}
+
+
+a.nav-menu.tempo {
+  color: red;
+}
+
+.nav-bar-tempo {
+  height: 6em;
+  padding: 2em;
+}

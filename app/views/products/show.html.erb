@@ -1,0 +1,27 @@
+<img src="http://i.imgur.com/hHmJ8V5.jpg" class="img-responsive" alt="Responsive image">
+<div class="container">
+	<% @products.each do |product| %>
+		<div class="row">
+			<div class="col-md-3">
+				<%= image_tag product.pic_url, class: "img-responsive",  alt: "Responsive image" %>
+			</div>
+			<div class="col-md-8">
+				<p><%= product.created_at.strftime('%b %d, %Y') %></p>
+				<p class='highlight-product'><%= product.highlight %><p>
+				<% if product.description.length > 10 %>
+				    <%= truncate(product.description, length: 10) %>
+				    <%= link_to 'Read more', '', class: "read-more" %>
+				    <script>
+				      $('.read-more').on('click', function(e) {
+				        e.preventDefault();
+				        $(this).parent().html('<%= escape_javascript product.description %>')
+				      })
+				    </script>
+				 <% else %>
+				    <%= product.description %>
+				<% end %>
+				</div>
+
+		</div>
+	<%end%>
+</div>

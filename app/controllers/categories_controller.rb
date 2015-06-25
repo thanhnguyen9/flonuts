@@ -1,6 +1,6 @@
 class CategoriesController < ApplicationController
   def index
-    @products = Product.order('created_at DESC')
+    @products = Product.order('created_at DESC').limit(3)
   end
 
   def create
@@ -15,6 +15,6 @@ class CategoriesController < ApplicationController
   private
 
   def params_category
-    params.require(:category).permit(:name)
+    params.require(:category).permit(:name, :check_box)
   end
 end

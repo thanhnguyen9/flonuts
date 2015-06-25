@@ -1,16 +1,17 @@
-<%= form_tag('/categories', remote: true, method: :get) do %>
-  <% @categories.each do |category| %>
-    <%= label_tag category.name %>
-    <%= check_box_tag "categories[]", id: "task-check"%>
-  <%end%>
-<%end%>
-<div class="row">
+<img src="http://i.imgur.com/hHmJ8V5.jpg" class="img-responsive" alt="Responsive image">
+<div class="container">
+	<%= form_tag('/products/checked', remote: true, method: :get, id: 'product-form') do %>
+	  	<ul>
+	  		<% @categories.each do |category| %>
+		  		<li class='box-check'>
+			  		<%= check_box_tag 'ids[]', category.id, category.check_box %>
+					<%= label_tag category.name %>
+				</li>
+			<%end%>
+	  	</ul>
+	<%end%>
 
-    <% @products.each do |product| %>
-  <div class="col-md-4">
-      <%= image_tag product.pic_url, class: "img-responsive",  alt: "Responsive image" %>
-      <%= product.highlight %>
-  </div>
-
-<%end%>
+	<div class="row product-check">
+		<%= render partial: 'product' %>
+	</div>
 </div>

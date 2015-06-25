@@ -25,6 +25,7 @@
 .new-page{
   background: url("http://i.imgur.com/hHmJ8V5.jpg") no-repeat fixed;
   height: 200px;
+  margin-top: -3em
 }
 
 .row {
@@ -68,7 +69,7 @@ img.img-responsive.logo-image-top {
   margin: auto;
 }
 
-.slogan.bites{padding-top: 0.1em}
+.slogan.bites{padding-top: 0.3em}
 p.product-name{text-align: center}
 
 a.btn.btn-primary.view-button {
@@ -76,3 +77,7 @@ a.btn.btn-primary.view-button {
 }
 
 h4.now-playing{text-align: center}
+
+.a {
+  background-color: rgb(252, 247, 247)
+}

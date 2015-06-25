@@ -39,3 +39,4 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'jquery-rails'
+gem 'rails_12factor'

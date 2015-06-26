@@ -81,3 +81,31 @@ label {
   text-transform: uppercase;
   color: rgb(202, 165, 160);
 }
+
+
+input[type=checkbox].box-check + label {
+  font-size: 18px;
+  vertical-align: middle;
+}
+input[type=checkbox].box-check {
+    -webkit-appearance:button;
+    -moz-appearance:button;
+    appearance: button;
+    border-radius:2.5px;
+    border: 1px solid #AD6969;
+
+    width:18px;
+    height:18px;
+    margin:0px;
+    margin-right:5px;
+    vertical-align: middle;
+}
+
+input[type=checkbox].box-check:checked {
+    background-color:#F9C4C4;
+    border: 5px solid #F9C4C4;
+}
+
+input[type=checkbox].box-check:hover {
+    background-color: #F9C4C4;
+}

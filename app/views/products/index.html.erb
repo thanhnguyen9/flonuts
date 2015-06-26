@@ -8,8 +8,8 @@
 	<%= form_tag('/products/checked', remote: true, method: :get, id: 'product-form') do %>
 	  	<ul>
 	  		<% @categories.each do |category| %>
-		  		<li class='box-check'>
-			  		<%= check_box_tag 'ids[]', category.id, category.check_box %>
+		  		<li>
+			  		<%= check_box_tag 'ids[]', category.id, category.check_box, class: 'box-check' %>
 					<%= label_tag category.name %>
 				</li>
 			<%end%>

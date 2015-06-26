@@ -49,17 +49,17 @@ padding: 0 3em;
 }
 
 .view-button{
-  border-radius: 10px;
   background:#FFFFFF;
-  border: 1px solid #F782B7;
+  border: 1px solid rgb(215, 126, 126);
   padding: 8px 16px;
-  color: #F782B7;
-  margin-top:0px;
+  color: rgb(215, 126, 126);
+  margin-top: 1em;
+  margin-bottom: 1em;
   text-decoration: none
 }
 
 .view-button:hover, .button_2:focus{
-  background-color: #F782B7;
+  background-color: rgb(215, 126, 126);
   color: #FFFFFF;
 	text-decoration: none;
 
@@ -110,3 +110,6 @@ input[type=checkbox].box-check:checked {
     background-color:#F9C4C4;
 }
 ul#menu-pick{margin-left: -95px}
+
+#view-product-paragraph{padding-bottom: 1em;}
+.view-product{margin-bottom: 2em}

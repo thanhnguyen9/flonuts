@@ -48,16 +48,21 @@ padding: 0 3em;
 	color: rgb(218, 90, 90);
 }
 
-.btn-primary {
+.view-button{
+  border-radius: 10px;
+  background:#FFFFFF;
+  border: 1px solid #F782B7;
+  padding: 8px 16px;
   color: #F782B7;
-  background-color: #FFFFFF;
-  border-color: #F782B7;
+  margin-top:0px;
+  text-decoration: none
 }
 
-.btn-primary:hover{
-	color: #FFFFFF;
-	background-color: #F782B7;
-	border-color: #FFFFFF;
+.view-button:hover, .button_2:focus{
+  background-color: #F782B7;
+  color: #FFFFFF;
+	text-decoration: none;
+
 }
 
 img.img-responsive.logo-image-top {

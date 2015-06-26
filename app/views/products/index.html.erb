@@ -6,7 +6,7 @@
 </div>
 <div class="container">
 	<%= form_tag('/products/checked', remote: true, method: :get, id: 'product-form') do %>
-	  	<ul>
+	  	<ul id='menu-pick'>
 	  		<% @categories.each do |category| %>
 		  		<li>
 			  		<%= check_box_tag 'ids[]', category.id, category.check_box, class: 'box-check' %>
